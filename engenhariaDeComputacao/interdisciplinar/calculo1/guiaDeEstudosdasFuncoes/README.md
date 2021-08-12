@@ -6,3 +6,6 @@
 
 ### Informações:
 - Foi utilizado o conhecimento da linguagem C até a matéria inicial de ponteiros
+
+### Atualizações:
+- Serão feitas atualizações do programa no decorrer dos estudos
