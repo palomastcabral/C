@@ -1,4 +1,4 @@
-## Guia de Estudos das Funções
+## Guia de Estudos das Funções [em andamento]
 
 ### Objetivo:
 - Unir o conhecimento adquirido da linguagem C com a disciplina Cálculo 1, do 1º período da graduação em Engenharia de Computação
