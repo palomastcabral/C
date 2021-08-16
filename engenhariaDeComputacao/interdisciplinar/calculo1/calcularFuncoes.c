@@ -1,7 +1,6 @@
-/* Programa para realizar cálculos de funções estudadas em Cálculo I (em andamento)
-    1. Função potência
-    2. Função afim
-    3. Função quadrática
+/* Programa para a realização cálculos de funções estudadas em Cálculo I (em andamento)
+    1. Função afim
+    2. Função quadrática
     ...*/
 #include<stdio.h>
 #include<locale.h>
