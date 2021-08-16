@@ -1,11 +1,11 @@
-## Guia de Estudos das Funções [em andamento]
+## ğŸ”¢ Guia de Estudos das FunÃ§Ãµes [em andamento]
 
 ### Objetivo:
-- Unir o conhecimento adquirido da linguagem C com a disciplina Cálculo 1, do 1º período da graduação em Engenharia de Computação
-- Centralizar os conteúdos dos diversos tipos de funções para fins de estudo e revisão
+- Unir o conhecimento adquirido da linguagem C com a disciplina CÃ¡lculo 1, do 1Âº perÃ­odo da graduaÃ§Ã£o em Engenharia de ComputaÃ§Ã£o
+- Centralizar os conteÃºdos dos diversos tipos de funÃ§Ãµes para fins de estudo e revisÃ£o
 
-### Informações:
-- Foi utilizado o conhecimento da linguagem C até a matéria inicial de ponteiros
+### InformaÃ§Ãµes:
+- Foi utilizado o conhecimento da linguagem C atÃ© a matÃ©ria inicial de ponteiros
 
-### Atualizações:
-- Serão feitas atualizações do programa no decorrer dos estudos
+### AtualizaÃ§Ãµes:
+- SerÃ£o feitas atualizaÃ§Ãµes do programa no decorrer dos estudos
