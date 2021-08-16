@@ -1,6 +1,6 @@
-/* Programa para a realizaÁ„o c·lculos de funÁıes estudadas em C·lculo I (em andamento)
-    1. FunÁ„o afim
-    2. FunÁ„o quadr·tica
+/* Programa para a realiza√ß√£o de c√°lculos de fun√ß√µes estudadas em C√°lculo I (em andamento)
+    1. Fun√ß√£o afim
+    2. Fun√ß√£o quadr√°tica
     ...*/
 #include<stdio.h>
 #include<locale.h>
@@ -65,12 +65,12 @@ void imprimirMenuInicial()
 {
     char mensagem[40];
 
-    strcpy(mensagem, "CALCULAR FUN«’ES");
+    strcpy(mensagem, "CALCULAR FUN√á√ïES");
     imprimirInterface(mensagem);
     printf("\n 1. Afim");
-    printf("\n 2. Quadr·tica");
+    printf("\n 2. Quadr√°tica");
     printf("\n 0. Sair");
-    printf("\n\n -> OpÁ„o: ");
+    printf("\n\n -> Op√ß√£o: ");
     return;
 }
 
@@ -82,42 +82,42 @@ void imprimirTelaFuncaoEscolhida(int opcaoMenuInicial, int topicoEscolhido)
     {
         case 1: do
                 {
-                    strcpy(mensagem, "CALCULAR FUN«√O AFIM");
+                    strcpy(mensagem, "CALCULAR FUN√á√ÉO AFIM");
                     imprimirInterface(mensagem);
                     imprimirDefinicaoFuncao(opcaoMenuInicial);
-                    imprimirTopicoMenuSecundario(opcaoMenuInicial);  // funÁ„o ainda ser· alterada
+                    imprimirTopicoMenuSecundario(opcaoMenuInicial);  // fun√ß√£o ainda ser√° alterada
                     lerTopicoFuncaoEscolhida(&topicoEscolhido);
                 }
                 while(topicoEscolhido != 0);
                 break;
-        case 2: strcpy(mensagem, "CALCULAR FUN«√O QUADR¡TICA");
+        case 2: strcpy(mensagem, "CALCULAR FUN√á√ÉO QUADR√ÅTICA");
                 imprimirInterface(mensagem);
                 imprimirDefinicaoFuncao(opcaoMenuInicial);
-                imprimirTopicoMenuSecundario(opcaoMenuInicial);  // funÁ„o ainda ser· alterada
+                imprimirTopicoMenuSecundario(opcaoMenuInicial);  // fun√ß√£o ainda ser√° alterada
                 lerTopicoFuncaoEscolhida(&topicoEscolhido);
                 break;
         case 0: printf("\n\n [Sistema encerrado]\n\n");
                 //system("pause");
                 break;
         default:
-                printf("\n\a [OpÁ„o inv·lida!]");
+                printf("\n\a [Op√ß√£o inv√°lida!]");
                 sleep(1);
                 break;
     }
     return;
 }
 
-void imprimirTopicoMenuSecundario(int opcaoMenuInicial)  // funÁ„o ainda ser· alterada
+void imprimirTopicoMenuSecundario(int opcaoMenuInicial)  // fun√ß√£o ainda ser√° alterada
 {
     switch (opcaoMenuInicial)
     {
-        case 1: // em construÁ„o
+        case 1: // em constru√ß√£o
                 printf("\n 0. Voltar\n");
-                printf("\n  -> OpÁ„o:");
+                printf("\n  -> Op√ß√£o:");
                 break;
-        case 2: // em construÁ„o
+        case 2: // em constru√ß√£o
                 printf("\n 0. Voltar\n");
-                printf("\n  -> OpÁ„o: ");
+                printf("\n  -> Op√ß√£o: ");
 
         default:
                 break;
@@ -128,9 +128,9 @@ void imprimirDefinicaoFuncao(int opcaoMenuInicial)
 {
     switch(opcaoMenuInicial)
     {
-        case 1: printf("f(x) = a.x + b  |  a,b -> R, a diferente de 0\n\n");  //FunÁ„o Afim
+        case 1: printf("f(x) = a.x + b  |  a,b -> R, a diferente de 0\n\n");  //Fun√ß√£o Afim
                 break;
-        case 2: printf("f(x) = a.x + b + c |  a,b,c -> R, a diferente de 0\n\n");  //FunÁ„o Quadr·tica
+        case 2: printf("f(x) = a.x + b + c |  a,b,c -> R, a diferente de 0\n\n");  //Fun√ß√£o Quadr√°tica
                 break;
     }
     return;
