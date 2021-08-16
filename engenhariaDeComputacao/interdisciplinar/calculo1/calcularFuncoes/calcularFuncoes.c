@@ -1,4 +1,4 @@
-/* Programa para a realização cálculos de funções estudadas em Cálculo I (em andamento)
+/* Programa para a realização de cálculos de funções estudadas em Cálculo I (em andamento)
     1. Função afim
     2. Função quadrática
     ...*/
