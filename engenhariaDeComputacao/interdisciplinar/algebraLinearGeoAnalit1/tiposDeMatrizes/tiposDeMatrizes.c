@@ -119,7 +119,7 @@ void imprimirMatrizEscolhida(int opcaoEscolhida)
                 imprimirInterface(mensagem);
                 imprimirMatrizIdentidade();
                 break;
-        case 10:strcpy(mensagem, "MATRIZ TRANSPOSTA");
+        case 10:strcpy(mensagem, "  MATRIZ TRANSPOSTA  ");
                 imprimirInterface(mensagem);
                 imprimirMatrizTransposta();
                 break;
@@ -348,12 +348,12 @@ void imprimirMatrizIdentidade()
 
 void imprimirMatrizTransposta()
 {
-    int totalLinhas, totalColunas, indiceLinha, indiceColuna=1;
+    int totalLinhas, totalColunas, indiceLinha, indiceColuna;
 
     printf("\n|A ordem das linhas e colunas é alterada:");
     printf("\n Amxn -> Anxm  ||  [aij] -> [aji]\n\n\n");
-    totalLinhas = (rand() % 8) + 2;
-    totalColunas = (rand() % 8) + 2;
+    totalLinhas = (rand() % 8) + 2;  //Adicionei 2 para imprimir matrizes com qntd de linhas de 0 e 1 
+    totalColunas = (rand() % 8) + 2;  //Adicionei 2 para imprimir matrizes com qntd de colunas diferente de 0 e 1 
     printf(" A%dx%d:\n\n", totalLinhas, totalColunas);
     for(indiceLinha=1; indiceLinha<=totalLinhas; indiceLinha++)
     {
