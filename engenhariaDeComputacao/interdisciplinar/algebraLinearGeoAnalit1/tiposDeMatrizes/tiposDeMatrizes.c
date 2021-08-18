@@ -73,7 +73,7 @@ void imprimirOpcoes()
     printf("\n 09. Identidade");
     printf("\n 10. Transposta");
     printf("\n 00. Sair");
-    printf("\n\n -> OpÁ„o: ");
+    printf("\n\n -> Op√ß√£o: ");
     return;
 }
 
@@ -125,7 +125,7 @@ void imprimirMatrizEscolhida(int opcaoEscolhida)
                 break;
         case 0: printf("\n\n [Sistema encerrado]\n\n");
                 break;
-        default:printf("\n\a [OpÁ„o inv·lida]");
+        default:printf("\n\a [Op√ß√£o inv√°lida]");
                 sleep(1);
                 break;
     }
@@ -171,7 +171,7 @@ void imprimirMatrizNula()
 {
     int totalLinhas, totalColunas, indiceLinha, indiceColuna=1;
 
-    printf("\n|Todos os elementos s„o nulos\n\n");
+    printf("\n|Todos os elementos s√£o nulos\n\n");
     totalLinhas = (rand() % 9) + 1;
     totalColunas = (rand() % 9) + 1;
     printf(" A%dx%d:\n\n", totalLinhas, totalColunas);
@@ -191,7 +191,7 @@ void imprimirMatrizQuadrada()
 {
     int totalLinhas, totalColunas, indiceLinha, indiceColuna=1;
 
-    printf("\n|N˙mero de linhas È igual ao n˙mero de colunas (m=n)\n\n");
+    printf("\n|N√∫mero de linhas √© igual ao n√∫mero de colunas (m=n)\n\n");
     totalColunas = (rand() % 9) + 1;
     totalLinhas = totalColunas;
     printf(" A%dx%d:\n\n", totalLinhas, totalColunas);
@@ -200,7 +200,7 @@ void imprimirMatrizQuadrada()
         printf("  [ ");
         for(indiceColuna=1; indiceColuna<=totalColunas; indiceColuna++)
         {
-            printf("0 ", indiceLinha, indiceColuna);
+            printf("a%d%d ", indiceLinha, indiceColuna);
         }
         printf("]\n");
     }
@@ -211,7 +211,7 @@ void imprimirMatrizTriangSuperior()
 {
     int totalLinhas, totalColunas, indiceLinha, indiceColuna=1, elementoNulo=0;
 
-    printf("\n|Elementos abaixo da diagonal principal (i>j) s„o nulos\n\n");
+    printf("\n|Elementos abaixo da diagonal principal (i>j) s√£o nulos\n\n");
     totalLinhas = (rand() % 8) + 2;
     totalColunas = totalLinhas;
     printf(" A%d%d:\n\n", totalLinhas, totalColunas);
@@ -238,7 +238,7 @@ void imprimirMatrizTriangInferior()
 {
     int totalLinhas, totalColunas, indiceLinha, indiceColuna=1, elementoNulo=0;
 
-    printf("\n|Elementos acima da diagonal principal (i<j) s„o nulos\n\n");
+    printf("\n|Elementos acima da diagonal principal (i<j) s√£o nulos\n\n");
     totalLinhas = (rand() % 8) + 2;
     totalColunas = totalLinhas;
     printf(" A%d%d:\n\n", totalLinhas, totalColunas);
@@ -265,7 +265,7 @@ void imprimirMatrizDiagonal()
 {
     int totalLinhas, totalColunas, indiceLinha, indiceColuna=1, elementoNulo=0;
 
-    printf("\n|Todos os elementos fora da diagonal principal (i diferente de j) s„o nulos\n\n");
+    printf("\n|Todos os elementos fora da diagonal principal (i diferente de j) s√£o nulos\n\n");
     totalLinhas = (rand() % 8) + 2;
     totalColunas = totalLinhas;
     printf(" A%d%d:\n\n", totalLinhas, totalColunas);
@@ -285,7 +285,7 @@ void imprimirMatrizDiagonal()
         }
         printf("]\n");
     }
-    printf("\n  Obs.: Os elementos da diagonal principal podem ser nulos (sendo tambÈm uma matriz nula e escalar)\n");
+    printf("\n  Obs.: Os elementos da diagonal principal podem ser nulos (sendo tamb√©m uma matriz nula e escalar)\n");
     return;
 }
 
@@ -293,7 +293,7 @@ void imprimirMatrizEscalar()
 {
     int totalLinhas, totalColunas, indiceLinha, indiceColuna=1, escalarK;
 
-    printf("\n|… uma matriz diagonal, sendo que elementos da diagonal principal (com i=j) s„o iguais a um escalar k\n\n");
+    printf("\n|√â uma matriz diagonal, sendo que elementos da diagonal principal (com i=j) s√£o iguais a um escalar k\n\n");
     escalarK = rand() % 10;
     totalLinhas = (rand() % 8) + 2;
     totalColunas = totalLinhas;
@@ -314,7 +314,7 @@ void imprimirMatrizEscalar()
         }
         printf("]\n");
     }
-    printf("\n  Obs.: Os elementos da diagonal principal podem ser nulos (sendo tambÈm uma matriz nula)\n");
+    printf("\n  Obs.: Os elementos da diagonal principal podem ser nulos (sendo tamb√©m uma matriz nula)\n");
     return;
 }
 
@@ -322,8 +322,8 @@ void imprimirMatrizIdentidade()
 {
     int totalLinhas, totalColunas, indiceLinha, indiceColuna=1;
 
-    printf("\n|Todos os elementos fora da diagonal principal (i diferente de j) s„o nulos");
-    printf("\n|Todos os elementos da diagonal principal (i=j) s„o iguais a 1\n\n");
+    printf("\n|Todos os elementos fora da diagonal principal (i diferente de j) s√£o nulos");
+    printf("\n|Todos os elementos da diagonal principal (i=j) s√£o iguais a 1\n\n");
     totalColunas = (rand() % 8) + 2;
     totalLinhas = totalColunas;
     printf(" I%d:\n\n", totalColunas);
@@ -350,7 +350,7 @@ void imprimirMatrizTransposta()
 {
     int totalLinhas, totalColunas, indiceLinha, indiceColuna=1;
 
-    printf("\n|A ordem das linhas e colunas È alterada:");
+    printf("\n|A ordem das linhas e colunas √© alterada:");
     printf("\n Amxn -> Anxm  ||  [aij] -> [aji]\n\n\n");
     totalLinhas = (rand() % 8) + 2;
     totalColunas = (rand() % 8) + 2;
